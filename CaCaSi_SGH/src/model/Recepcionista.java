@@ -1,0 +1,24 @@
+public class Recepcionista extends Funcionario {
+
+	/**
+	 *  
+	 */
+	public void adicionar() {
+
+	}
+
+	/**
+	 *  
+	 */
+	public void remover() {
+
+	}
+
+	/**
+	 *  
+	 */
+	public void actualizar() {
+
+	}
+
+}
