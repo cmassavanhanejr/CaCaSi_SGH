@@ -10,4 +10,19 @@ public class Recepcionista extends Funcionario {
 
 	}
 
+    /**
+     * @return the marcConsulta
+     */
+    public Collection<MarcConsulta> getMarcConsulta() {
+        return marcConsulta;
+    }
+
+    /**
+     * @param marcConsulta the marcConsulta to set
+     */
+    public void setMarcConsulta(Collection<MarcConsulta> marcConsulta) {
+        this.marcConsulta = marcConsulta;
+    }
+
+        
 }
