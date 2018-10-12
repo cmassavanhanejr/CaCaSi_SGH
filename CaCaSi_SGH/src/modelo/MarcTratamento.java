@@ -1,9 +1,11 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 
@@ -13,20 +15,24 @@ import javax.persistence.Temporal;
  */
 @Entity
 @Table(name="MarcTratamento")
-public class MarcTratamento {
+public class MarcTratamento implements Serializable {
         @Id
 	private int id;
 
         @Temporal(javax.persistence.TemporalType.DATE)
 	private Date data;
 
+        @ManyToOne
 	private Tratamento tratamento;
 
+        @ManyToOne
 	private Paciente paciente;
 
+        @ManyToOne
 	private Enfermeiro enfermeiro;
-
-	private Collection<ProcessoClinico> processoClinico;
+        
+        @ManyToOne
+        private Recepcionista recepcionista;
 
 	
 
@@ -105,19 +111,16 @@ public class MarcTratamento {
     }
 
     /**
-     * @return the processoClinico
+     * @return the recepcionista
      */
-    public Collection<ProcessoClinico> getProcessoClinico() {
-        return processoClinico;
+    public Recepcionista getRecepcionista() {
+        return recepcionista;
     }
 
     /**
-     * @param processoClinico the processoClinico to set
+     * @param recepcionista the recepcionista to set
      */
-    public void setProcessoClinico(Collection<ProcessoClinico> processoClinico) {
-        this.processoClinico = processoClinico;
+    public void setRecepcionista(Recepcionista recepcionista) {
+        this.recepcionista = recepcionista;
     }
-        
-        
-
 }

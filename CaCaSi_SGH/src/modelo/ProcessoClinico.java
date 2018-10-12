@@ -5,7 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
 @Entity
 @Table(name="ProcessoClinico")
 public class ProcessoClinico {
@@ -17,17 +20,24 @@ public class ProcessoClinico {
 
 	private String prescricoesTerapeuticas;
 
+        @Temporal(javax.persistence.TemporalType.DATE)
 	private Date dataEmissao;
-
+        
+        
+        @OneToOne
 	private Paciente paciente;
 
-	private MarcTratamento marcTratamento;
+	@ManyToOne
+        private MarcTratamento marcTratamento;
 
+        @ManyToOne
 	private Medico medico;
 
+        @ManyToOne
 	private MarcConsulta marcConsulta;
 
-	private ExamePaciente examePaciente;
+        @ManyToOne
+	private MarcExame examePaciente;
 
 	public ProcessoClinico() {
 
@@ -89,11 +99,11 @@ public class ProcessoClinico {
         this.marcConsulta = marcConsulta;
     }
 
-    public ExamePaciente getExamePaciente() {
+    public MarcExame getExamePaciente() {
         return examePaciente;
     }
 
-    public void setExamePaciente(ExamePaciente examePaciente) {
+    public void setExamePaciente(MarcExame examePaciente) {
         this.examePaciente = examePaciente;
     }
         

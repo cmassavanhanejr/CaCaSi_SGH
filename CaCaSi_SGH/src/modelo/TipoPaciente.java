@@ -2,16 +2,19 @@ package modelo;
 
 import java.util.Collection;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
 @Table(name = "TipoPaciente")
 public class TipoPaciente {
 
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	private String designacao;
-
-	private Collection<Paciente> paciente;
 
 	public TipoPaciente() {
 
@@ -44,21 +47,4 @@ public class TipoPaciente {
     public void setDesignacao(String designacao) {
         this.designacao = designacao;
     }
-
-    /**
-     * @return the paciente
-     */
-    public Collection<Paciente> getPaciente() {
-        return paciente;
-    }
-
-    /**
-     * @param paciente the paciente to set
-     */
-    public void setPaciente(Collection<Paciente> paciente) {
-        this.paciente = paciente;
-    }
-        
-        
-
 }

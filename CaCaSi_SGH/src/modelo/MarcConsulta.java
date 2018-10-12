@@ -2,9 +2,9 @@ package modelo;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -23,15 +23,17 @@ public class MarcConsulta implements Serializable {
         @Temporal (TemporalType.TIME)
 	private Date hora;
 
+        @ManyToOne
 	private Paciente paciente;
 
+        @ManyToOne
 	private Consulta consulta;
 
+        @ManyToOne
 	private Medico medico;
 
-	private Collection<ProcessoClinico> processoClinico;
-
-	private Collection<Recepcionista> recepcionista;
+        @ManyToOne
+	private Recepcionista recepcionista;
 
 	/**
 	 *  
@@ -122,35 +124,19 @@ public class MarcConsulta implements Serializable {
      */
     public void setMedico(Medico medico) {
         this.medico = medico;
-    }
-
-    /**
-     * @return the processoClinico
-     */
-    public Collection<ProcessoClinico> getProcessoClinico() {
-        return processoClinico;
-    }
-
-    /**
-     * @param processoClinico the processoClinico to set
-     */
-    public void setProcessoClinico(Collection<ProcessoClinico> processoClinico) {
-        this.processoClinico = processoClinico;
-    }
+    }       
 
     /**
      * @return the recepcionista
      */
-    public Collection<Recepcionista> getRecepcionista() {
+    public Recepcionista getRecepcionista() {
         return recepcionista;
     }
 
     /**
      * @param recepcionista the recepcionista to set
      */
-    public void setRecepcionista(Collection<Recepcionista> recepcionista) {
+    public void setRecepcionista(Recepcionista recepcionista) {
         this.recepcionista = recepcionista;
     }
-
-        
 }

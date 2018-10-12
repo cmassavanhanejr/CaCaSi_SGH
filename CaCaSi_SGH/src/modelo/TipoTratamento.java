@@ -1,7 +1,12 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.Collection;
+import javax.annotation.Generated;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 /**
  * 
@@ -9,13 +14,15 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="TipoTratamento")
-public class TipoTratamento {
-
+public class TipoTratamento implements Serializable {
+        
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
 	private String designacao;
 
-	private Collection<Tratamento> tratamento;
+	
 
 	public TipoTratamento() {
 
@@ -47,20 +54,6 @@ public class TipoTratamento {
      */
     public void setDesignacao(String designacao) {
         this.designacao = designacao;
-    }
-
-    /**
-     * @return the tratamento
-     */
-    public Collection<Tratamento> getTratamento() {
-        return tratamento;
-    }
-
-    /**
-     * @param tratamento the tratamento to set
-     */
-    public void setTratamento(Collection<Tratamento> tratamento) {
-        this.tratamento = tratamento;
     }
 
 }

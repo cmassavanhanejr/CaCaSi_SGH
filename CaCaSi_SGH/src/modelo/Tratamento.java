@@ -1,12 +1,11 @@
 package modelo;
 
 import java.util.Collection;
+import javax.persistence.ManyToMany;
 
 public class Tratamento extends Servico {
-
+        @ManyToMany
 	private TipoTratamento tipoTratamento;
-
-	private Collection<MarcTratamento> marcTratamento;
 
 	public Tratamento() {
 
@@ -26,19 +25,7 @@ public class Tratamento extends Servico {
         this.tipoTratamento = tipoTratamento;
     }
 
-    /**
-     * @return the marcTratamento
-     */
-    public Collection<MarcTratamento> getMarcTratamento() {
-        return marcTratamento;
-    }
-
-    /**
-     * @param marcTratamento the marcTratamento to set
-     */
-    public void setMarcTratamento(Collection<MarcTratamento> marcTratamento) {
-        this.marcTratamento = marcTratamento;
-    }
+    
 
         
 }

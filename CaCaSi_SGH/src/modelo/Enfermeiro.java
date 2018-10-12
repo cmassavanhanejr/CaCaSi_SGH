@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name="Enfermeiro")
 public class Enfermeiro extends Funcionario {
 
-	private Collection<MarcTratamento> marcTratamento;
+	
 
 	public Enfermeiro() {
 

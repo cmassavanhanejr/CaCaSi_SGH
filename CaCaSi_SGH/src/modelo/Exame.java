@@ -9,7 +9,7 @@ public class Exame extends Servico {
 
 	private TipoExame tipoExame;
 
-	private Collection<ExamePaciente> examePaciente;
+	private Collection<MarcExame> examePaciente;
 
 	public Exame() {
 
@@ -32,14 +32,14 @@ public class Exame extends Servico {
     /**
      * @return the examePaciente
      */
-    public Collection<ExamePaciente> getExamePaciente() {
+    public Collection<MarcExame> getExamePaciente() {
         return examePaciente;
     }
 
     /**
      * @param examePaciente the examePaciente to set
      */
-    public void setExamePaciente(Collection<ExamePaciente> examePaciente) {
+    public void setExamePaciente(Collection<MarcExame> examePaciente) {
         this.examePaciente = examePaciente;
     }
 
