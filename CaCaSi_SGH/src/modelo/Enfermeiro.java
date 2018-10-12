@@ -17,21 +17,5 @@ public class Enfermeiro extends Funcionario {
 
 	}
 
-    /**
-     * 
-     * @return 
-     */
-    public Collection<MarcTratamento> getMarcTratamento() {
-        return marcTratamento;
-    }
-
-    /**
-     * 
-     * @param marcTratamento 
-     */
-    public void setMarcTratamento(Collection<MarcTratamento> marcTratamento) {
-        this.marcTratamento = marcTratamento;
-    }
-
         
 }
