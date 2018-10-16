@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package view;
 
 import java.awt.event.ActionEvent;
@@ -12,10 +13,11 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import javafx.scene.chart.PieChart;
-
 import javax.swing.JFrame;
 import javax.swing.Timer;
+
+import javax.swing.JFrame;
+
 
 /**
  *
@@ -59,16 +61,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         lblData = new javax.swing.JLabel();
         lblHora = new javax.swing.JLabel();
+        lblUtilizador = new javax.swing.JLabel();
 
         jPasswordField1.setText("jPasswordField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
+
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 formWindowOpened(evt);
             }
         });
+
 
         painelPrincipal.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -194,7 +199,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         lblData.setText("jLabel5");
 
+ 
         lblHora.setText("jLabel5");
+        lblUtilizador.setText("jLabel5");
 
         javax.swing.GroupLayout painelDosBotoesLayout = new javax.swing.GroupLayout(painelDosBotoes);
         painelDosBotoes.setLayout(painelDosBotoesLayout);
@@ -225,7 +232,9 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 .addGap(216, 216, 216)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+
                 .addComponent(lblHora, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblUtilizador, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(231, 231, 231)
                 .addComponent(jLabel3)
                 .addContainerGap())
@@ -263,6 +272,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(lblData)
                             .addComponent(lblHora))
+                            .addComponent(lblUtilizador))
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelDosBotoesLayout.createSequentialGroup()
                         .addGap(398, 398, 398)
@@ -309,8 +319,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        TelaServicos ts = new  TelaServicos();
          ts.setVisible(true);
+         dispose();
+       TelaServicos tf = new  TelaServicos();
+         tf.setVisible(true);
          dispose(); 
-         
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -323,10 +335,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void jProcessoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jProcessoKeyPressed
         // chamar tela da tabela pacientes :
-
-
-
-
 
 
     }//GEN-LAST:event_jProcessoKeyPressed
@@ -354,7 +362,7 @@ TelaCadastro tf = new TelaCadastro();
          tf.setVisible(true);
          dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
-      
+
     private void jAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAgendaActionPerformed
        Agenda tf = new Agenda();
          tf.setVisible(true);
@@ -433,7 +441,6 @@ TelaCadastro tf = new TelaCadastro();
     private javax.swing.JPanel painelDosBotoes;
     private javax.swing.JPanel painelPrincipal;
     // End of variables declaration//GEN-END:variables
-
 class hora implements  ActionListener{
 @Override
  public void actionPerformed(ActionEvent e){
@@ -441,12 +448,11 @@ class hora implements  ActionListener{
  lblHora.setText(String.format("H:M" , now));
  
  }
-
+}
+}//// fim da classe principal
+    private javax.swing.JLabel lblUtilizador;
+    private javax.swing.JPanel painelDosBotoes;
+    private javax.swing.JPanel painelPrincipal;
+    // End of variables declaration//GEN-END:variables
 }
 
-
-
-
-
-
-}//// fim da classe principal

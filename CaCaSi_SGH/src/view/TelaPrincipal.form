@@ -117,6 +117,7 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="lblHora" min="-2" pref="119" max="-2" attributes="0"/>
+                      <Component id="lblUtilizador" min="-2" pref="119" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="231" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -160,6 +161,7 @@
                                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblData" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblHora" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUtilizador" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
@@ -481,6 +483,7 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblHora">
+            <Component class="javax.swing.JLabel" name="lblUtilizador">
               <Properties>
                 <Property name="text" type="java.lang.String" value="jLabel5"/>
               </Properties>

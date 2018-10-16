@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package view;
+
 
 /**
  *
@@ -42,10 +44,11 @@ public class TelaCadastro extends javax.swing.JFrame {
         Cadastro.setFont(new java.awt.Font("Century", 1, 24)); // NOI18N
         Cadastro.setForeground(new java.awt.Color(0, 153, 255));
         Cadastro.setText("                              Cadastro");
-
         Pacientes.setBackground(new java.awt.Color(0, 153, 153));
         Pacientes.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
         Pacientes.setForeground(new java.awt.Color(255, 255, 255));
+        Pacientes.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
+        Pacientes.setForeground(new java.awt.Color(0, 153, 255));
         Pacientes.setText("Pacientes");
         Pacientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,6 +59,8 @@ public class TelaCadastro extends javax.swing.JFrame {
         Funcionarios.setBackground(new java.awt.Color(0, 153, 153));
         Funcionarios.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
         Funcionarios.setForeground(new java.awt.Color(255, 255, 255));
+        Funcionarios.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
+        Funcionarios.setForeground(new java.awt.Color(0, 153, 255));
         Funcionarios.setText("Funcionários");
         Funcionarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,11 +89,16 @@ public class TelaCadastro extends javax.swing.JFrame {
                         .addComponent(Pacientes, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Funcionarios, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(75, 75, 75)
+                        .addComponent(Pacientes)
+                        .addGap(94, 94, 94)
+                        .addComponent(Funcionarios))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addComponent(Voltar)))
                 .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(227, Short.MAX_VALUE))
             .addComponent(jSeparator2)
         );
         jPanel1Layout.setVerticalGroup(
@@ -104,6 +114,11 @@ public class TelaCadastro extends javax.swing.JFrame {
                     .addComponent(Funcionarios, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
                     .addComponent(Pacientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Pacientes)
+                    .addComponent(Funcionarios))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
                 .addComponent(Voltar)
                 .addGap(25, 25, 25))
         );
