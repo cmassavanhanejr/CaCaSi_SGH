@@ -19,6 +19,16 @@ public class Especialidade implements Serializable {
         
         private int designacao;
 	private Collection<Medico> medico;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public Especialidade() {
 

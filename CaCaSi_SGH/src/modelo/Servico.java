@@ -20,6 +20,16 @@ public class Servico {
 	private String descricao;
 
 	private double preco;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public Servico() {
 

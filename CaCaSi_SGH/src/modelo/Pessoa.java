@@ -1,5 +1,6 @@
 package modelo;
 
+import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Pessoa {
+public class Pessoa implements Serializable {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -35,9 +36,19 @@ public class Pessoa {
 	private int celular;
 
 	private String email;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	/**
-	 *  
+	 *  Construtor padrao da pessoa para permitir uso do Hibernate
 	 */
 	public Pessoa() {
 

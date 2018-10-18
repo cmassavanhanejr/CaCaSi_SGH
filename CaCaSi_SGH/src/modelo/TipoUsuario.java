@@ -21,6 +21,16 @@ public class TipoUsuario implements Serializable {
 	private String designacao;
 
 	private Collection<Usuario> usuario;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public TipoUsuario() {
 

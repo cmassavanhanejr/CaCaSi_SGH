@@ -16,6 +16,16 @@ public class TipoExame {
 
 	private String designacao;
 
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
+        
 	public TipoExame() {
 
 	}

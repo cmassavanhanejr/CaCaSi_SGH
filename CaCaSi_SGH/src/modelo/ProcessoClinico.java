@@ -38,6 +38,16 @@ public class ProcessoClinico {
 
         @ManyToOne
 	private MarcExame examePaciente;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public ProcessoClinico() {
 
