@@ -5,10 +5,12 @@
  */
 package controler;
 
+
+
 /**
- *
+ * Classe contendo os metodos de persitencias a base dados do paciente
  * @author Carlos Massavanhane
  */
-public class PacienteDAO {
-    
+public class PacienteDAO extends DAO{
+   
 }
