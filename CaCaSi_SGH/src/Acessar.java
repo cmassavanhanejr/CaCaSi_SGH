@@ -1,3 +1,4 @@
+<<<<<<< HEAD:CaCaSi_SGH/src/Acessar.java
 
 import View.Principal;
 import javax.transaction.Transactional;
@@ -7,6 +8,13 @@ import javax.transaction.Transactional;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+=======
+package view;
+
+
+
+
+>>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561:CaCaSi_SGH/src/View/Acessar.java
 
 /**
  *
@@ -171,6 +179,7 @@ public class Acessar extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Acessar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

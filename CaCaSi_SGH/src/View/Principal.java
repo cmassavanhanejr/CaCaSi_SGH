@@ -1,5 +1,22 @@
+
 package View;
 /**
+=======
+package view;
+
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+import javax.swing.Timer;
+
+
+
+/*
+>>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -55,7 +72,11 @@ public class Principal extends javax.swing.JFrame {
         painelNomeTela.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+<<<<<<< HEAD
         jLabel1.setFont(new java.awt.Font("Century", 1, 36)); // NOI18N
+=======
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+>>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
         jLabel1.setText("                                              Sistema de Gestão da Clínica");
 
@@ -87,7 +108,11 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(lblData, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(lblHora, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+<<<<<<< HEAD
                 .addContainerGap(643, Short.MAX_VALUE))
+=======
+                .addContainerGap(87, Short.MAX_VALUE))
+>>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561
         );
         painelHoraDataLayout.setVerticalGroup(
             painelHoraDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +155,8 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.setLayout(new java.awt.GridLayout(3, 3, 2, 2));
 
         btnCadastro.setBackground(new java.awt.Color(255, 255, 255));
-        btnCadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\Customer\\Downloads\\Icones\\Cadastro.png")); // NOI18N
+        btnCadastro.setForeground(new java.awt.Color(255, 255, 255));
+        btnCadastro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Cadastro.png"))); // NOI18N
         btnCadastro.setToolTipText("Cadastro");
         btnCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,6 +166,7 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.add(btnCadastro);
 
         btnProcessos.setBackground(new java.awt.Color(255, 255, 255));
+        btnProcessos.setForeground(new java.awt.Color(255, 255, 255));
         btnProcessos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medical-results-folders.png"))); // NOI18N
         btnProcessos.setToolTipText("Processos Clínicos");
         btnProcessos.addActionListener(new java.awt.event.ActionListener() {
@@ -150,11 +177,13 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.add(btnProcessos);
 
         btnEstatistica.setBackground(new java.awt.Color(255, 255, 255));
+        btnEstatistica.setForeground(new java.awt.Color(255, 255, 255));
         btnEstatistica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Estatistica.png"))); // NOI18N
         btnEstatistica.setToolTipText("Estatisticas");
         painelMeio.add(btnEstatistica);
 
         btnServicos.setBackground(new java.awt.Color(255, 255, 255));
+        btnServicos.setForeground(new java.awt.Color(255, 255, 255));
         btnServicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ser.png"))); // NOI18N
         btnServicos.setToolTipText("Serviços");
         btnServicos.addActionListener(new java.awt.event.ActionListener() {
@@ -165,11 +194,13 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.add(btnServicos);
 
         btnFuncionario.setBackground(new java.awt.Color(255, 255, 255));
+        btnFuncionario.setForeground(new java.awt.Color(255, 255, 255));
         btnFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/employee.png"))); // NOI18N
         btnFuncionario.setToolTipText("Funcionários");
         painelMeio.add(btnFuncionario);
 
         btnDefinicao.setBackground(new java.awt.Color(255, 255, 255));
+        btnDefinicao.setForeground(new java.awt.Color(255, 255, 255));
         btnDefinicao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Definicoes.png"))); // NOI18N
         btnDefinicao.setToolTipText("Definições");
         btnDefinicao.addActionListener(new java.awt.event.ActionListener() {
@@ -180,6 +211,7 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.add(btnDefinicao);
 
         btnAgende.setBackground(new java.awt.Color(255, 255, 255));
+        btnAgende.setForeground(new java.awt.Color(255, 255, 255));
         btnAgende.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Agenda.png"))); // NOI18N
         btnAgende.setToolTipText("Agenda");
         btnAgende.addActionListener(new java.awt.event.ActionListener() {
@@ -190,11 +222,13 @@ public class Principal extends javax.swing.JFrame {
         painelMeio.add(btnAgende);
 
         btnRelatorio.setBackground(new java.awt.Color(255, 255, 255));
+        btnRelatorio.setForeground(new java.awt.Color(255, 255, 255));
         btnRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Relatorio (2).png"))); // NOI18N
         btnRelatorio.setToolTipText("Relatórios");
         painelMeio.add(btnRelatorio);
 
         btnAju.setBackground(new java.awt.Color(255, 255, 255));
+        btnAju.setForeground(new java.awt.Color(255, 255, 255));
         btnAju.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Ajuda (2).png"))); // NOI18N
         btnAju.setToolTipText("Ajuda"); // NOI18N
         btnAju.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +244,10 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgendeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendeActionPerformed
-        // TODO add your handling code here:
+         FormAgenda pc = new FormAgenda();
+        pc.setVisible(true);
+        dispose();
+// TODO add your handling code here:
     }//GEN-LAST:event_btnAgendeActionPerformed
 
     private void btnAjuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjuActionPerformed
@@ -218,6 +255,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAjuActionPerformed
 
     private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCadastroActionPerformed
 
@@ -235,6 +273,12 @@ public class Principal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnServicosActionPerformed
 
+=======
+   FormCadastro fc= new FormCadastro();
+   fc.setVisible(true);// TODO add your handling code here:
+    }                                           
+
+>>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561
     /**
      * @param args the command line arguments
      */
@@ -246,7 +290,7 @@ public class Principal extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -260,6 +304,7 @@ public class Principal extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -291,4 +336,11 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel painelMeio;
     private javax.swing.JPanel painelNomeTela;
     // End of variables declaration//GEN-END:variables
+class hora implements  ActionListener{
+ public void actionPerformed(ActionEvent e){
+ Calendar   now= Calendar.getInstance();
+ lblHora.setText(String.format("H :M:s", now));
+ 
+ }
+}
 }
