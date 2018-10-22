@@ -109,10 +109,14 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(31, 31, 31)
                 .addComponent(lblHora, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
 <<<<<<< HEAD
+<<<<<<< HEAD
                 .addContainerGap(643, Short.MAX_VALUE))
 =======
                 .addContainerGap(87, Short.MAX_VALUE))
 >>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561
+=======
+                .addContainerGap(698, Short.MAX_VALUE))
+>>>>>>> e29cc5a020ee85cde5eae89c7aec81d6cd9a1b6a
         );
         painelHoraDataLayout.setVerticalGroup(
             painelHoraDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -241,6 +245,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(painelMeio, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgendeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendeActionPerformed
@@ -251,7 +256,9 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAgendeActionPerformed
 
     private void btnAjuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjuActionPerformed
-        // TODO add your handling code here:
+        FormAjuda pc = new FormAjuda();
+        pc.setVisible(true);
+        dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_btnAjuActionPerformed
 
     private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
