@@ -99,7 +99,7 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(lblData, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(lblHora, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(87, Short.MAX_VALUE))
+                .addContainerGap(698, Short.MAX_VALUE))
         );
         painelHoraDataLayout.setVerticalGroup(
             painelHoraDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

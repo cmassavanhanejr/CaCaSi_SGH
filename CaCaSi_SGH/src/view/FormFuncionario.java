@@ -99,7 +99,7 @@ public class FormFuncionario extends javax.swing.JFrame {
 
         painelHora.setBackground(new java.awt.Color(255, 255, 255));
 
-        painelHoraData.setBackground(new java.awt.Color(255, 255, 255));
+        painelHoraData.setBackground(new java.awt.Color(0, 153, 153));
         painelHoraData.setPreferredSize(new java.awt.Dimension(751, 54));
 
         javax.swing.GroupLayout painelHoraDataLayout = new javax.swing.GroupLayout(painelHoraData);
@@ -144,7 +144,7 @@ public class FormFuncionario extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
         jPanel2.setPreferredSize(new java.awt.Dimension(649, 577));
 
-        painelfuncoes.setBackground(new java.awt.Color(0, 153, 153));
+        painelfuncoes.setBackground(new java.awt.Color(255, 255, 255));
 
         btnGravar.setText("gravar");
 
@@ -154,10 +154,9 @@ public class FormFuncionario extends javax.swing.JFrame {
 
         btnActualizar.setText("actualizar");
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setForeground(new java.awt.Color(255, 255, 255));
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Nacionalidade");
 
         try {
@@ -171,7 +170,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Código");
 
         txtCodigo.addActionListener(new java.awt.event.ActionListener() {
@@ -185,7 +183,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Nome");
 
         txtNome.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("######"))));
@@ -195,7 +192,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        lblProfissao.setForeground(new java.awt.Color(255, 255, 255));
         lblProfissao.setText("Profissao");
 
         comboProfissao.setBackground(new java.awt.Color(0, 153, 153));
@@ -206,7 +202,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        lblEspecialidade.setForeground(new java.awt.Color(255, 255, 255));
         lblEspecialidade.setText("Especialidade");
 
         txtMorada.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("????????????"))));
@@ -223,7 +218,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        lblMorada.setForeground(new java.awt.Color(255, 255, 255));
         lblMorada.setText("Morada");
 
         try {
@@ -232,10 +226,8 @@ public class FormFuncionario extends javax.swing.JFrame {
             ex.printStackTrace();
         }
 
-        lblCelular.setForeground(new java.awt.Color(255, 255, 255));
         lblCelular.setText("Celular");
 
-        lblEmail.setForeground(new java.awt.Color(255, 255, 255));
         lblEmail.setText("E-mail");
 
         try {
@@ -249,7 +241,6 @@ public class FormFuncionario extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Estado Civil");
 
         comboCivil.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Casado", "Solteiro" }));
@@ -394,11 +385,11 @@ public class FormFuncionario extends javax.swing.JFrame {
         jTable3.setGridColor(new java.awt.Color(255, 255, 255));
         jScrollPane3.setViewportView(jTable3);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(0, 153, 153));
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setBackground(new java.awt.Color(0, 153, 153));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 153, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("                                               Cadastro Funcionario");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

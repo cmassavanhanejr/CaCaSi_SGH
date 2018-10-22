@@ -79,7 +79,7 @@ public class Acessar extends javax.swing.JFrame {
         });
 
         btnHiperlink.setForeground(new java.awt.Color(153, 153, 153));
-        btnHiperlink.setText("www.uem.com");
+        btnHiperlink.setText("http://www.uem.mz");
         btnHiperlink.setBorder(null);
         btnHiperlink.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,7 +119,7 @@ public class Acessar extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jSeparator3)
-                            .addComponent(btnHiperlink, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE))))
+                            .addComponent(btnHiperlink, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
