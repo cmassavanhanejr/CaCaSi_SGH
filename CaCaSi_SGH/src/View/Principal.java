@@ -1,4 +1,5 @@
-/*
+package View;
+/**
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -54,9 +55,9 @@ public class Principal extends javax.swing.JFrame {
         painelNomeTela.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel1.setText("                     Sistema de Gestão da Clínica");
+        jLabel1.setText("                                              Sistema de Gestão da Clínica");
 
         javax.swing.GroupLayout painelNomeTelaLayout = new javax.swing.GroupLayout(painelNomeTela);
         painelNomeTela.setLayout(painelNomeTelaLayout);
@@ -86,7 +87,7 @@ public class Principal extends javax.swing.JFrame {
                 .addComponent(lblData, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(lblHora, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addContainerGap(643, Short.MAX_VALUE))
         );
         painelHoraDataLayout.setVerticalGroup(
             painelHoraDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,11 +132,21 @@ public class Principal extends javax.swing.JFrame {
         btnCadastro.setBackground(new java.awt.Color(255, 255, 255));
         btnCadastro.setIcon(new javax.swing.ImageIcon("C:\\Users\\Customer\\Downloads\\Icones\\Cadastro.png")); // NOI18N
         btnCadastro.setToolTipText("Cadastro");
+        btnCadastro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastroActionPerformed(evt);
+            }
+        });
         painelMeio.add(btnCadastro);
 
         btnProcessos.setBackground(new java.awt.Color(255, 255, 255));
         btnProcessos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/medical-results-folders.png"))); // NOI18N
         btnProcessos.setToolTipText("Processos Clínicos");
+        btnProcessos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProcessosActionPerformed(evt);
+            }
+        });
         painelMeio.add(btnProcessos);
 
         btnEstatistica.setBackground(new java.awt.Color(255, 255, 255));
@@ -146,6 +157,11 @@ public class Principal extends javax.swing.JFrame {
         btnServicos.setBackground(new java.awt.Color(255, 255, 255));
         btnServicos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/ser.png"))); // NOI18N
         btnServicos.setToolTipText("Serviços");
+        btnServicos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnServicosActionPerformed(evt);
+            }
+        });
         painelMeio.add(btnServicos);
 
         btnFuncionario.setBackground(new java.awt.Color(255, 255, 255));
@@ -156,6 +172,11 @@ public class Principal extends javax.swing.JFrame {
         btnDefinicao.setBackground(new java.awt.Color(255, 255, 255));
         btnDefinicao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Definicoes.png"))); // NOI18N
         btnDefinicao.setToolTipText("Definições");
+        btnDefinicao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDefinicaoActionPerformed(evt);
+            }
+        });
         painelMeio.add(btnDefinicao);
 
         btnAgende.setBackground(new java.awt.Color(255, 255, 255));
@@ -195,6 +216,24 @@ public class Principal extends javax.swing.JFrame {
     private void btnAjuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAjuActionPerformed
+
+    private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCadastroActionPerformed
+
+    private void btnProcessosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProcessosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnProcessosActionPerformed
+
+    private void btnDefinicaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDefinicaoActionPerformed
+       ForumDefinicoes df = new ForumDefinicoes();
+        setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnDefinicaoActionPerformed
+
+    private void btnServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnServicosActionPerformed
 
     /**
      * @param args the command line arguments

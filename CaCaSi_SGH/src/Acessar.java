@@ -1,3 +1,7 @@
+
+import View.Principal;
+import javax.transaction.Transactional;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,11 +14,12 @@
  */
 public class Acessar extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Acessar
-     */
+   String usuario = "CaCaSi";
+   String senha = "12345";
+   
     public Acessar() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
 
     /**
@@ -43,7 +48,8 @@ public class Acessar extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 153, 153));
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Century", 1, 18)); // NOI18N
         jLabel1.setText("Usuário");
         jLabel1.setPreferredSize(new java.awt.Dimension(34, 19));
 
@@ -55,7 +61,8 @@ public class Acessar extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 0, 14)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Century", 1, 18)); // NOI18N
         jLabel2.setText("Senha");
 
         jPasswordField1.setBackground(new java.awt.Color(0, 153, 153));
@@ -118,8 +125,8 @@ public class Acessar extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblImagemLogin)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(lblImagemLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,7 +138,7 @@ public class Acessar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
+      
         Principal pc = new Principal();
         pc.setVisible(true);
         dispose();
