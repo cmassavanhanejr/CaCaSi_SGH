@@ -5,8 +5,9 @@
  */
 package util;
 
-import controler.PacienteDAO;
-import modelo.Paciente;
+import controler.MedicoDAO;
+import modelo.Especialidade;
+import modelo.Medico;
 
 /**
  *
@@ -14,10 +15,17 @@ import modelo.Paciente;
  */
 public class Testes {
     public static void main(String[] args) {
-        Paciente p=new Paciente();
-        
-        p.setNome("Carlos");
-        
-        PacienteDAO.gravar(p);
+//        Medico m=new Medico();
+//        
+//        m.setNome("Carlos");
+//        m.setEspecialidade(new Especialidade());
+//        
+//        MedicoDAO.gravar(m);
+//        
+//        if(MedicoDAO.gravar(m)){
+//            System.out.println("Gravado");
+//            FabricaSessoes.getSessionFactory().close();
+        //}
+
     }
 }

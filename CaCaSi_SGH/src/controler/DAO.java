@@ -7,7 +7,6 @@ package controler;
 
 import java.util.ArrayList;
 import org.hibernate.Criteria;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import util.FabricaSessoes;
@@ -47,7 +46,7 @@ public abstract class DAO {
             s.close();
         }
     }
-    public static ArrayList<Object> lerTodosEstudantes(){
+    public static ArrayList<Object> lerTodosElementos(){
         Session s = FabricaSessoes.getSessionFactory().openSession();
         Transaction t = s.beginTransaction();
         Criteria cr = s.createCriteria(Object.class);
@@ -62,9 +61,5 @@ public abstract class DAO {
             s.close();
         }
     }
-    /*public static boolean remover(){
-        Session s = FabricaSessoes.getSessionFactory().openSession();
-        Transaction t = s.beginTransaction();
-        return false;
-    }*/
+    
 }
