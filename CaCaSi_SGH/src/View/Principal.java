@@ -213,6 +213,7 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(painelMeio, java.awt.BorderLayout.CENTER);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAgendeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgendeActionPerformed
@@ -223,7 +224,9 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAgendeActionPerformed
 
     private void btnAjuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAjuActionPerformed
-        // TODO add your handling code here:
+        FormAjuda pc = new FormAjuda();
+        pc.setVisible(true);
+        dispose(); // TODO add your handling code here:
     }//GEN-LAST:event_btnAjuActionPerformed
 
     private void btnCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastroActionPerformed
