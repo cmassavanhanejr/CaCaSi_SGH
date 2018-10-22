@@ -5,16 +5,10 @@
  */
 package controler;
 
-import java.util.ArrayList;
-
-
-
 /**
- * Classe contendo os metodos de persitencias a base dados do paciente
+ *
  * @author Carlos Massavanhane
  */
-public class PacienteDAO extends DAO{
-
+public class MedicoDAO extends DAO {
     
-   
 }

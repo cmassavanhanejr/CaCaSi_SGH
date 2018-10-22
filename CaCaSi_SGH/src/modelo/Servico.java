@@ -1,5 +1,6 @@
 package modelo;
 
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,7 +10,7 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Servico {
+public class Servico implements Serializable {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,6 +21,16 @@ public class Servico {
 	private String descricao;
 
 	private double preco;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public Servico() {
 

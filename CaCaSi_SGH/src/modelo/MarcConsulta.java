@@ -33,7 +33,25 @@ public class MarcConsulta implements Serializable {
 	private Medico medico;
 
         @ManyToOne
-	private Recepcionista recepcionista;
+	private Usuario usuario;
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	/**
 	 *  
@@ -126,17 +144,4 @@ public class MarcConsulta implements Serializable {
         this.medico = medico;
     }       
 
-    /**
-     * @return the recepcionista
-     */
-    public Recepcionista getRecepcionista() {
-        return recepcionista;
-    }
-
-    /**
-     * @param recepcionista the recepcionista to set
-     */
-    public void setRecepcionista(Recepcionista recepcionista) {
-        this.recepcionista = recepcionista;
-    }
 }

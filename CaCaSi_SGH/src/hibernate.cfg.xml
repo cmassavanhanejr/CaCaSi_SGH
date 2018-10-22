@@ -49,5 +49,26 @@ Contributor(s):
     <property name="hibernate.format_sql">true</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
     <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="modelo.Paciente"/>
+    <mapping class="modelo.Enfermeiro"/>
+    <mapping class="modelo.Especialidade"/>
+    <mapping class="modelo.Exame"/>
+    <mapping class="modelo.Funcionario"/>
+    <mapping class="modelo.MarcConsulta"/>
+    <mapping class="modelo.MarcExame"/>
+    <mapping class="modelo.MarcTratamento"/>
+    <mapping class="modelo.Medico"/>
+    <mapping class="modelo.Paciente"/>
+    <mapping class="modelo.Pessoa"/>
+    <mapping class="modelo.ProcessoClinico"/>
+    <mapping class="modelo.Recepcionista"/>
+    <mapping class="modelo.Servico"/>
+    <mapping class="modelo.TipoExame"/>
+    <mapping class="modelo.TipoPaciente"/>
+    <mapping class="modelo.TipoTratamento"/>
+    <mapping class="modelo.TipoUsuario"/>
+    <mapping class="modelo.Tratamento"/>
+    <mapping class="modelo.Usuario"/>
+    <mapping class="modelo.Consulta"/>
   </session-factory>
 </hibernate-configuration>

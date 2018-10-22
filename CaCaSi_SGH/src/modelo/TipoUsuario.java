@@ -1,7 +1,6 @@
 package modelo;
 
 import java.io.Serializable;
-import java.util.Collection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,8 +18,16 @@ public class TipoUsuario implements Serializable {
 	private int id;
 
 	private String designacao;
+        
+        private boolean removido;
 
-	private Collection<Usuario> usuario;
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public TipoUsuario() {
 
@@ -42,20 +49,6 @@ public class TipoUsuario implements Serializable {
      */
     public void setDesignacao(String designacao) {
         this.designacao = designacao;
-    }
-
-    /**
-     * @return the usuario
-     */
-    public Collection<Usuario> getUsuario() {
-        return usuario;
-    }
-
-    /**
-     * @param usuario the usuario to set
-     */
-    public void setUsuario(Collection<Usuario> usuario) {
-        this.usuario = usuario;
     }
 
 }

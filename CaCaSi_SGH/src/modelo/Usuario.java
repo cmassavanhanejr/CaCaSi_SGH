@@ -25,6 +25,16 @@ public class Usuario implements Serializable {
 	private TipoUsuario tipoUsuario;
 
 	private Funcionario funcionario;
+        
+        private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public Usuario() {
 

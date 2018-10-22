@@ -34,7 +34,15 @@ public class MarcTratamento implements Serializable {
         @ManyToOne
         private Recepcionista recepcionista;
 
-	
+	private boolean removido;
+
+    public boolean isRemovido() {
+        return removido;
+    }
+
+    public void setRemovido(boolean removido) {
+        this.removido = removido;
+    }
 
 	public MarcTratamento() {
 
