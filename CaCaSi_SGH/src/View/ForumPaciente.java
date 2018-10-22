@@ -168,16 +168,6 @@ public class ForumPaciente extends javax.swing.JFrame {
 
         jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Casado", "Solteiro", " ", " " }));
 
-        jFormattedTextField1.setText("jFormattedTextField1");
-
-        jFormattedTextField2.setText("jFormattedTextField2");
-
-        jFormattedTextField3.setText("jFormattedTextField3");
-
-        jFormattedTextField5.setText("jFormattedTextField5");
-
-        jFormattedTextField7.setText("jFormattedTextField7");
-
         jFormattedTextField8.setText("jFormattedTextField8");
 
         jFormattedTextField9.setText("jFormattedTextField9");
@@ -267,8 +257,6 @@ public class ForumPaciente extends javax.swing.JFrame {
         jLabel67.setText("Valor a Pagar");
 
         jFormattedTextField11.setText("jFormattedTextField11");
-
-        jFormattedTextField12.setText("jFormattedTextField12");
 
         jLabel68.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
         jLabel68.setForeground(new java.awt.Color(0, 153, 153));
