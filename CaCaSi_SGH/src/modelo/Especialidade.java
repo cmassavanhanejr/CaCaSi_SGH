@@ -18,7 +18,7 @@ public class Especialidade implements Serializable {
 	private int id;
         
         private int designacao;
-	private Collection<Medico> medico;
+	
         
         private boolean removido;
 
@@ -60,21 +60,5 @@ public class Especialidade implements Serializable {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * @return the medico
-     */
-    public Collection<Medico> getMedico() {
-        return medico;
-    }
-
-    /**
-     * @param medico the medico to set
-     */
-    public void setMedico(Collection<Medico> medico) {
-        this.medico = medico;
-    }
-        
-        
+    }       
 }

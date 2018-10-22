@@ -8,7 +8,6 @@ import javax.persistence.Table;
  * @author Carlos Massavanhane
  */
 @Entity
-@Table(name="Enfermeiro")
 public class Enfermeiro extends Funcionario {
 
 	

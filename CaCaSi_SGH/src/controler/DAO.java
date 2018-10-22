@@ -62,7 +62,9 @@ public abstract class DAO {
             s.close();
         }
     }
-    public static boolean remover(){
+    /*public static boolean remover(){
+        Session s = FabricaSessoes.getSessionFactory().openSession();
+        Transaction t = s.beginTransaction();
         return false;
-    }
+    }*/
 }

@@ -1,10 +1,11 @@
 package modelo;
 
 import java.util.Collection;
-import javax.persistence.ManyToMany;
-
+import javax.persistence.Entity;
+import javax.persistence.ManyToOne;
+@Entity
 public class Tratamento extends Servico {
-        @ManyToMany
+        @ManyToOne
 	private TipoTratamento tipoTratamento;
 
 	public Tratamento() {

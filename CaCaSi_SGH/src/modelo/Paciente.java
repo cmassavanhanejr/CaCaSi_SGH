@@ -1,16 +1,14 @@
 package modelo;
 
-import java.util.Collection;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.ManyToOne;
+
 @Entity
-@Table(name="Paciente")
 public class Paciente extends Pessoa {
 
 	private String codigo;
 
-	@ManyToMany
+	@ManyToOne
         private TipoPaciente tipoPaciente;
 
 	
