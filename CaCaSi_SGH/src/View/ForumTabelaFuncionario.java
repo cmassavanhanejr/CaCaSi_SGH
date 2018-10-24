@@ -30,7 +30,7 @@ public class ForumTabelaFuncionario extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         TelaNome = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         PainelHora = new javax.swing.JPanel();
         lbnDataFuncionario = new javax.swing.JLabel();
         lbnHoraFuncionario = new javax.swing.JLabel();
@@ -51,30 +51,30 @@ public class ForumTabelaFuncionario extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("                                Funcionário");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-back-filled-50.png"))); // NOI18N
+        jButton1.setText("VOLTAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TelaNomeLayout = new javax.swing.GroupLayout(TelaNome);
         TelaNome.setLayout(TelaNomeLayout);
         TelaNomeLayout.setHorizontalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaNomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 633, Short.MAX_VALUE)
                 .addContainerGap())
         );
         TelaNomeLayout.setVerticalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TelaNomeLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaNomeLayout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(42, 42, 42))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaNomeLayout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33))))
+                .addComponent(jLabel1)
+                .addGap(42, 42, 42))
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel1.add(TelaNome, java.awt.BorderLayout.PAGE_START);
@@ -176,6 +176,13 @@ public class ForumTabelaFuncionario extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        TelaPrincipal tp =new TelaPrincipal();
+        tp.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -220,8 +227,8 @@ public class ForumTabelaFuncionario extends javax.swing.JFrame {
     private javax.swing.JButton btnPesquisa;
     private javax.swing.JTable btnTabela;
     private javax.swing.JLabel btnVoltar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanelTela;
     private javax.swing.JScrollPane jScrollPane1;

@@ -31,7 +31,7 @@ public class ForumDefinicoes extends javax.swing.JFrame {
         TelaNome = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         btnDataDefinicoes = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -56,34 +56,37 @@ public class ForumDefinicoes extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("            Definições");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-back-filled-50.png"))); // NOI18N
+        jButton1.setText("VOLTAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TelaNomeLayout = new javax.swing.GroupLayout(TelaNome);
         TelaNome.setLayout(TelaNomeLayout);
         TelaNomeLayout.setHorizontalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TelaNomeLayout.createSequentialGroup()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TelaNomeLayout.createSequentialGroup()
-                        .addGap(293, 293, 293)
+                        .addGap(220, 220, 220)
                         .addComponent(jLabel7))
                     .addGroup(TelaNomeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
+                        .addGap(32, 32, 32)
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         TelaNomeLayout.setVerticalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TelaNomeLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(29, 29, 29)
+                .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
                 .addContainerGap(30, Short.MAX_VALUE))
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel1.add(TelaNome, java.awt.BorderLayout.PAGE_START);
@@ -237,6 +240,13 @@ public class ForumDefinicoes extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        TelaPrincipal pc = new TelaPrincipal();
+        pc.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -282,10 +292,10 @@ public class ForumDefinicoes extends javax.swing.JFrame {
     private javax.swing.JButton btnEspecialidades;
     private javax.swing.JButton btnTerminarSessao;
     private javax.swing.JButton btnTiposPacientes;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

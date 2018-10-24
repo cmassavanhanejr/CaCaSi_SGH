@@ -30,7 +30,7 @@ public class ForumAnalise extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         TelaNome = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        btnVoltar = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         lbnDataExame = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         lbnHoraExame = new javax.swing.JLabel();
@@ -50,19 +50,24 @@ public class ForumAnalise extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Century", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("                        Exame");
+        jLabel1.setText("            Exame");
 
-        btnVoltar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-back-filled-50.png"))); // NOI18N
+        jButton1.setText("VOLTAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TelaNomeLayout = new javax.swing.GroupLayout(TelaNome);
         TelaNome.setLayout(TelaNomeLayout);
         TelaNomeLayout.setHorizontalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TelaNomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE))
+                .addComponent(jButton1)
+                .addGap(97, 97, 97)
+                .addComponent(jLabel1)
+                .addContainerGap(211, Short.MAX_VALUE))
         );
         TelaNomeLayout.setVerticalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -70,10 +75,7 @@ public class ForumAnalise extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addContainerGap(26, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaNomeLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel1.add(TelaNome, java.awt.BorderLayout.PAGE_START);
@@ -211,6 +213,13 @@ public class ForumAnalise extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        TelaPrincipal pc = new TelaPrincipal();
+        pc.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -253,7 +262,7 @@ public class ForumAnalise extends javax.swing.JFrame {
     private javax.swing.JPanel TelaNome;
     private javax.swing.JLabel btnExame;
     private javax.swing.JLabel btnValorPagar;
-    private javax.swing.JLabel btnVoltar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JFormattedTextField jFormattedTextField2;

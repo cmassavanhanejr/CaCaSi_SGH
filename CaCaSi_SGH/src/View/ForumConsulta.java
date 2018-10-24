@@ -30,6 +30,7 @@ public class ForumConsulta extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         TelaNome = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         PainelBaixo = new javax.swing.JPanel();
         lbnDataConsulta = new javax.swing.JLabel();
         lbnHoraConsulta = new javax.swing.JLabel();
@@ -44,6 +45,7 @@ public class ForumConsulta extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
@@ -52,23 +54,32 @@ public class ForumConsulta extends javax.swing.JFrame {
         jLabel5.setBackground(new java.awt.Color(0, 153, 153));
         jLabel5.setFont(new java.awt.Font("Century", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("                                    Consulta");
+        jLabel5.setText("                        Consulta");
+
+        jButton1.setText("VOLTAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout TelaNomeLayout = new javax.swing.GroupLayout(TelaNome);
         TelaNome.setLayout(TelaNomeLayout);
         TelaNomeLayout.setHorizontalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TelaNomeLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jButton1)
+                .addGap(68, 68, 68)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 622, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         TelaNomeLayout.setVerticalGroup(
             TelaNomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TelaNomeLayout.createSequentialGroup()
+            .addGroup(TelaNomeLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5)
-                .addContainerGap(75, Short.MAX_VALUE))
+                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
+                .addGap(31, 31, 31))
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         jPanel1.add(TelaNome, java.awt.BorderLayout.PAGE_START);
@@ -93,7 +104,7 @@ public class ForumConsulta extends javax.swing.JFrame {
             .addGroup(PainelBaixoLayout.createSequentialGroup()
                 .addGap(101, 101, 101)
                 .addComponent(lbnDataConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 311, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 351, Short.MAX_VALUE)
                 .addComponent(lbnHoraConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(121, 121, 121))
         );
@@ -121,7 +132,11 @@ public class ForumConsulta extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 153, 153));
         jLabel2.setText("   Médico");
 
-        jFormattedTextField2.setText("jFormattedTextField2");
+        jFormattedTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField2ActionPerformed(evt);
+            }
+        });
 
         jLabel3.setBackground(new java.awt.Color(0, 153, 153));
         jLabel3.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
@@ -132,8 +147,6 @@ public class ForumConsulta extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Century", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 153, 153));
         jLabel4.setText("Valor a pagar");
-
-        jFormattedTextField4.setText("jFormattedTextField4");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Bolseiro", "Não Bolseiro", "Docentes", "CTA", "Investigador", "Externo", " " }));
 
@@ -200,6 +213,17 @@ public class ForumConsulta extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         TelaPrincipal tp=new TelaPrincipal();
+        tp.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jFormattedTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -240,6 +264,7 @@ public class ForumConsulta extends javax.swing.JFrame {
     private javax.swing.JPanel PainelBaixo;
     private javax.swing.JPanel PainelMeio;
     private javax.swing.JPanel TelaNome;
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JFormattedTextField jFormattedTextField2;

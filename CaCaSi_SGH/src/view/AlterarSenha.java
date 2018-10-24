@@ -5,8 +5,6 @@
  */
 package view;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Silja Ferro
@@ -138,7 +136,7 @@ public class AlterarSenha extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-     Principal pc =new Principal();
+     TelaPrincipal pc =new TelaPrincipal();
         dispose();
  // TODO add your handling code here:
     }//GEN-LAST:event_btnCancelarActionPerformed

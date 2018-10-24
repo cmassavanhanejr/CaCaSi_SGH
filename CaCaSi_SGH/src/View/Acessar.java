@@ -1,15 +1,11 @@
-<<<<<<< HEAD:CaCaSi_SGH/src/Acessar.java
+package View;
 
-import View.Principal;
-import javax.transaction.Transactional;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-=======
-package view;
 
 import java.awt.Desktop;
 import java.awt.event.KeyEvent;
@@ -17,8 +13,6 @@ import java.net.URI;
 
 
 
-
->>>>>>> 1fd2bf8d2aae7b84c77a5cfc8b33b7d33f463561:CaCaSi_SGH/src/View/Acessar.java
 
 /**
  *
@@ -183,17 +177,15 @@ public class Acessar extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-<<<<<<< HEAD:CaCaSi_SGH/src/Acessar.java
+
       
-        Principal pc = new Principal();
+        TelaPrincipal pc = new TelaPrincipal();
         pc.setVisible(true);
         dispose();
-=======
  //if (txtUsuario.equals("silja") && txtSenha.equals(1234))||(txtUsuario.equals("Carlos") && txtSenha.equals(1234)) ||(txtUsuario.equals("carla") && txtSenha.equals(1234));
 //        Principal pc = new Principal();
 //        pc.setVisible(true);
 //        dispose();
->>>>>>> e29cc5a020ee85cde5eae89c7aec81d6cd9a1b6a:CaCaSi_SGH/src/View/Acessar.java
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
